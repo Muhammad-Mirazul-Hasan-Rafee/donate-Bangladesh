@@ -17,7 +17,7 @@
             <div class="my-6 text-[#111111] font-semibold flex"><img class="h-12 w-12 items-center"
                     src="assets/logo.png" alt=""><span class="py-5 px-4 ml-4">Donate Bangladesh</span></div>
             <div class="my-6 text-[#111111] font-semibold flex"><img class="h-[28px] w-[28px] items-center"
-                    src="assets/coin.png" alt=""><span class=" ml-3 h-[25px] w-[95px]">5500 BDT</span></div>
+                    src="assets/coin.png" alt=""><span id="account-balance" class=" ml-3 h-[25px] w-[95px]">5500 BDT</span></div>
         </nav>
     </section>
     <!-- Two button side by side middle -->
@@ -31,15 +31,15 @@
     <!-- main part 1 -->
     <main class="mt-8 m-40 flex gap-x-8">
         <aside class="w-[522px] h-[389px]">
-            <img class="" src="assets/noakhali.png" alt="">
+            <img src="assets/noakhali.png" alt="">
         </aside>
 
 
         <div class="w-[32rem] h-[24rem]">
 
-            <section class="flex justify-center w-[110px] h-[44px] gap-x-2 px-4 py-[10px] text-[#111111]/[0.7] bg-[#111111]/[0.36] rounded-lg">
+            <section class="flex justify-center w-[140px] h-[44px] gap-x-2 px-4 py-[10px] text-[#111111]/[0.7] bg-[#111111]/[0.36] rounded-lg">
                 <img class="w-6 h-6" src="assets/coin.png" alt="">
-                <p>0 BDT</p>
+                <div><span id="donation-amount-balance1">0</span> BDT</div>
             </section>
 
             <h3 class="text-[#111111] font-bold mt-4">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -49,8 +49,8 @@
                 small, makes difference. Please join us in supporting the relief efforts and making a positive impact on
                 the lives of those in need.
             </article>
-            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="" placeholder="Write Donation Amount ">
-            <button class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
+            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="donation-amount1" placeholder="Write Donation Amount ">
+            <button id="btn-donate-now1" class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
         </div>
     </main>
 
@@ -63,9 +63,9 @@
 
         <div class="w-[32rem] h-[24rem]">
 
-            <section class="flex justify-center w-[129px] h-[44px] gap-x-2 px-4 py-[10px] text-[#111111]/[0.7] bg-[#111111]/[0.36] rounded-lg">
+            <section class="flex justify-center w-[138px] h-[44px] gap-x-2 px-4 py-[10px] text-[#111111]/[0.7] bg-[#111111]/[0.36] rounded-lg">
                 <img class="w-6 h-6" src="assets/coin.png" alt="">
-                <p>600 BDT</p>
+                <div><span id="donation-amount-balance2">600</span> BDT</div>
             </section>
 
             <h3 class="text-[#111111] font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -75,8 +75,8 @@
                 small, makes difference. Please join us in supporting the relief efforts and making a positive impact on
                 the lives of those in need.
             </article>
-            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="" placeholder="Write Donation Amount ">
-            <button class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
+            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="donation-amount2" placeholder="Write Donation Amount ">
+            <button id="btn-donate-now2" class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
         </div>
     </main>
 
@@ -91,7 +91,7 @@
 
             <section class="flex justify-center w-[138px] h-[44px] gap-x-2 px-4 py-[10px] text-[#111111]/[0.7] bg-[#111111]/[0.36] rounded-lg">
                 <img class="w-6 h-6" src="assets/coin.png" alt="">
-                <p>2400 BDT</p>
+                <div><span id="donation-amount-balance3">2400</span> BDT</div>
             </section>
 
             <h3 class="text-[#111111] font-bold mt-4">Aid for Injured in the Quota Movement</h3>
@@ -101,10 +101,17 @@
                 small, makes difference. Please join us in supporting the relief efforts and making a positive impact on
                 the lives of those in need.
             </article>
-            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="" placeholder="Write Donation Amount ">
-            <button class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
+            <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name="" id="donation-amount3" placeholder="Write Donation Amount ">
+            <button id="btn-donate-now3" class="w-[32rem] h-14 bg-[#B4F461] font-semibold mt-4">Donate Now</button>
         </div>
     </main>
+
+    
+    <script src="JS/utilities.js"></script>
+    <script src="JS/donate.js"></script>
+    <script src="JS/reduceBalance.js"></script>
+    
+    <script src="JS/features.js"></script>
 
 
 </body>
