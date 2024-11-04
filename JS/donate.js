@@ -4,10 +4,12 @@ document.getElementById('btn-donate-now1').addEventListener('click' , function(e
     event.preventDefault();
     
     
-    const currentBalance = getTextFieldValue('donation-amount-balance1');
-    const addMoney = getInputFieldValueOfDonation('donation-amount1');
-    const newDonation = addMoney + currentBalance;
-    document.getElementById('donation-amount-balance1').innerText = newDonation;
+    const currentBalance1 = getTextFieldValue('donation-amount-balance1');
+    const addMoney1 = getInputFieldValueOfDonation('donation-amount1');
+    const newDonation1 = addMoney1 + currentBalance1;
+    document.getElementById('donation-amount-balance1').innerText = newDonation1;
+    mainBalance(addMoney1);
+   
 
 });
 
@@ -16,10 +18,12 @@ document.getElementById('btn-donate-now2').addEventListener('click' , function(e
 
     event.preventDefault();
 
-    const currentBalance = getTextFieldValue('donation-amount-balance2');
-    const addMoney = getInputFieldValueOfDonation('donation-amount2');
-    const newDonation = addMoney + currentBalance;
-    document.getElementById('donation-amount-balance2').innerText = newDonation;
+    const currentBalance2 = getTextFieldValue('donation-amount-balance2');
+    const addMoney2 = getInputFieldValueOfDonation('donation-amount2');
+    const newDonation2 = addMoney2 + currentBalance2;
+    document.getElementById('donation-amount-balance2').innerText = newDonation2;
+    mainBalance(addMoney2);
+    
 });
 
 // third donation part
@@ -27,9 +31,20 @@ document.getElementById('btn-donate-now3').addEventListener('click' , function(e
 
     event.preventDefault();
 
-    const currentBalance = getTextFieldValue('donation-amount-balance3');
-    const addMoney = getInputFieldValueOfDonation('donation-amount3');
-    const newDonation = addMoney + currentBalance;
-    document.getElementById('donation-amount-balance3').innerText = newDonation;
+    const currentBalance3 = getTextFieldValue('donation-amount-balance3');
+    const addMoney3 = getInputFieldValueOfDonation('donation-amount3');
+    const newDonation3 = addMoney3 + currentBalance3;
+    document.getElementById('donation-amount-balance3').innerText = newDonation3;
+    mainBalance(addMoney3);
 
 }); 
+
+// Main Balance Reducing
+
+function mainBalance(donatedAmount){
+
+    let currentAccountBalance = getTextFieldValue('account-balance');
+    let newAccountBalance = currentAccountBalance - donatedAmount;
+    document.getElementById('account-balance').innerText = newAccountBalance;
+
+};
