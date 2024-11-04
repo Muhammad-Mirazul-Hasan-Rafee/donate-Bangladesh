@@ -15,3 +15,7 @@ function getTextFieldValue(id){
     const textAmount = parseFloat(textValue);
     return textAmount;
 };
+
+
+
+
