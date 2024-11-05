@@ -23,3 +23,23 @@ function changeColor(id){
 
 donateButton.addEventListener('click' , changeColor);
 historyButton.addEventListener('click' , changeColor);
+
+
+
+
+
+// show sections
+
+document.getElementById('btn-donation').addEventListener('click' , function(event){
+
+    showSectionById('main-section');
+
+});
+
+document.getElementById('btn-history').addEventListener('click' , function(event){
+
+    document.getElementById('history-section').classList.remove('hidden');
+
+
+    showSectionById('history-section');
+});
