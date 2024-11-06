@@ -17,6 +17,7 @@ document.getElementById('btn-donate-now1').addEventListener('click', function (e
         document.getElementById('donation-amount-balance1').innerText = newDonation1;
         mainBalance(addMoney1);
         historyOfDonation(addMoney1);
+        showModal();
     }
 });
 
@@ -39,6 +40,7 @@ document.getElementById('btn-donate-now2').addEventListener('click', function (e
         document.getElementById('donation-amount-balance2').innerText = newDonation2;
         mainBalance(addMoney2);
         historyOfDonation(addMoney2);
+        showModal();
     }
 });
 
@@ -61,6 +63,7 @@ document.getElementById('btn-donate-now3').addEventListener('click', function (e
         document.getElementById('donation-amount-balance3').innerText = newDonation3;
         mainBalance(addMoney3);
         historyOfDonation(addMoney3);
+        showModal();
     }
 });
 
@@ -78,10 +81,15 @@ function mainBalance(donatedAmount) {
 
 function historyOfDonation(donateAmount) {
     const div = document.createElement('div');
-    div.innerHTML = ` 
-    <h4> Total: ${donateAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
 
-    <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>`;
+    const donateDate = new Date();
+
+    div.innerHTML = ` 
+
+    <h4 class="font-bold text-[#111111]"> Total: ${donateAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+
+    <p>Date : ${donateDate} </p>`;
+
    
     document.getElementById('history-container').appendChild(div);
 

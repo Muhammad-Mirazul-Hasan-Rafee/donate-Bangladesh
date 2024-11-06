@@ -28,10 +28,10 @@
     </section>
 <!-- -------------------------------------------------Start Donation------------------------------------------------ -->
     <!-- main part 1 -->
-<section class="main-section">
+<section id="main-section">
     <main class="mt-8 m-40 flex gap-x-8">
         <aside class="w-[522px] h-[389px]">
-            <img src="assets/noakhali.png" alt="">
+            <img  src="assets/noakhali.png" alt="">
         </aside>
 
 
@@ -73,10 +73,7 @@
 
             <h3 class="text-[#111111] font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h3>
             <article class="w-[32rem] h-[130px] mt-5">
-                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
-                help provide essential supplies and to those affected by this disaster. Every contribution, big or
-                small, makes difference. Please join us in supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
             </article>
             <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name=""
                 id="donation-amount2" placeholder="Write Donation Amount ">
@@ -100,11 +97,8 @@
             </section>
 
             <h3 class="text-[#111111] font-bold mt-4">Aid for Injured in the Quota Movement</h3>
-            <article class="w-[32rem] h-[130px] mt-5">
-                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
-                help provide essential supplies and to those affected by this disaster. Every contribution, big or
-                small, makes difference. Please join us in supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+            <article class="w-[32rem] h-[auto] mt-5">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
             </article>
             <input class="border border-current rounded-lg w-[32rem] h-14 px-5 py-5" type="text" name=""
                 id="donation-amount3" placeholder="Write Donation Amount ">
@@ -116,7 +110,7 @@
 
  <!-- -------------------------------------------------Start History------------------------------------------------ -->
 
- <section id="history-section" class="hidden">
+ <section id="history-section" class="hidden mt-[32px] border border-current rounded-lg w-[1100px] h-[auto] px-5 py-5 flex items-center ml-[10%] mr-[10%]">
 
     <div id="history-container">
 
@@ -128,12 +122,23 @@
 
 <!-- -------------------------------------------------End History------------------------------------------------ -->
 
+<!-- modal start -->
+<div id="modal" class=" hidden grid justify-center bg-slate-100 rounded-lg fixed inset-0 w-[410px] ml-[470px] mt-[80px] mb-[80px]">  
+    <h2 class="text-[#111111] font-bold text-3xl ml-14">Congrates!</h2>
+    <img class="h-12 w-12 ml-28 mt-3" src="assets/coin.png" alt="">
+    <p class="text-[#111111]/[0.7] font-bold mr-[12px] mt-12">You Have Donated for Humankind</p>
+    <h4 class="text-[#111111] font-bold text-xl ml-[72px] mt-4">Successfully</h4>
+    <button id="btn-modal-close" class="font-medium bg-[#111111]/[0.1] h-[50px] w-[200px] rounded-lg ml-[30px] mt-4">Close Information</button>
+</div>
+ <!-- modal end -->
+
 
     <script src="JS/utilities.js"></script>
     <script src="JS/donate.js"></script>
     <script src="JS/features.js"></script>
+    <script src="JS/modal.js"></script>
 
 
 </body>
 
-</html>
+</html> 

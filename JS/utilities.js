@@ -17,5 +17,18 @@ function getTextFieldValue(id){
 };
 
 
+// general function to show and hide section
+function showSectionById(id){
+    
+    // hide the sections
+    document.getElementById('main-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+
+    // show the sections
+    document.getElementById(id).classList.remove('hidden');
+    
+
+};
+
 
 
