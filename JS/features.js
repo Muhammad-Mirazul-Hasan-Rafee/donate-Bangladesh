@@ -38,3 +38,24 @@ document.getElementById('btn-donation').addEventListener('click' , function(even
 document.getElementById('btn-history').addEventListener('click' , function(event){
     showSectionById('history-section');
 });
+
+
+// redirect
+let blog = true;
+const clickBlog = document.getElementById('btn-blog');
+
+function redirectPage(){
+    if(blog){
+        window.location.href = 'blog.html';
+        clickBlog.textContent = 'Home';
+    }
+    else{
+        window.location.href = 'index.html';
+        clickBlog.textContent = 'Blog';
+    }
+    blog =!blog;
+
+
+    clickBlog.addEventListener('click' , redirectPage);
+
+};
